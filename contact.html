@@ -13,6 +13,8 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Include Font Awesome Stylesheet in Header -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="css/the-big-picture.css" rel="stylesheet">
@@ -48,44 +50,57 @@
               <a class="nav-link" href="#">Other</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
+              <a class="nav-link" href="#">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
+
+	<section class="container contact">
+		<h2>Get In Touch</h2>
+			<form >
+				
+					<div class="form-group">
+						<label for="inputEmail4" class="col-form-label">Name</label>
+						<input type="text" class="form-control" id="inputEmail4" placeholder="Name">
+					</div>
+					<div class="form-group ">
+						<label for="inputPassword4" class="col-form-label">Subject</label>
+						<input type="text" class="form-control" id="inputPassword4" placeholder="WEB/Marketing">
+					</div>
+				
+				<div class="form-group ">
+					<label for="inputAddress" class="col-form-label">Description of the project</label>
+					<textarea type="text" class="form-control" rows="5" id="inputAddress" placeholder="Create a Website"></textarea>
+				</div>
+				<div class="form-group ">
+					<label for="inputAddress2" class="col-form-label">Email</label>
+					<input type="email" class="form-control" id="inputAddress2" placeholder="exemple@exemple.com">
+				</div>
+				<div class="form-group">
+					<label for="inputAddress2" class="col-form-label">Phone</label>
+					<input type="text" class="form-control" id="inputAddress2" placeholder="+60*********">
+				</div>
+				<button type="submit" class="btn btn-primary">Send it</button>
+			</form>
+	</section>
     
-
-   <section class="fixed-bottom" id="lab_social_icon_footer">
-<!-- Include Font Awesome Stylesheet in Header -->
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-<div class="container">
-        <div class="text-center center-block">
-              <a href="#"><i id="social-fb" class="fa fa-facebook fa-2x social"></i></a>
-              <a href="#"><i id="social-in" class="fa fa-instagram fa-2x social"></i></a>
-              <a href="mailto:#"><i id="social-em" class="fa fa-envelope fa-2x social"></i></a>
-    </div>
-</div>
-</section>
-  
+   		<section class="fixed-bottom" id="lab_social_icon_footer">
+			<div class="container">
+        		<div class="text-center center-block">
+              		<a href="#"><i id="social-fb" class="fa fa-facebook fa-2x social"></i></a>
+              		<a href="#"><i id="social-in" class="fa fa-instagram fa-2x social"></i></a>
+              		<a href="mailto:#"><i id="social-em" class="fa fa-envelope fa-2x social"></i></a>
+    			</div>
+			</div>
+		</section>
 
 
-    <!-- Page Content -->
-    <section>
-      <!-- <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h1 class="mt-5">The Big Picture</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt voluptates rerum eveniet sapiente repellat esse, doloremque quod recusandae deleniti nostrum assumenda vel beatae sed aut modi nesciunt porro quisquam voluptatem.</p>
-          </div>
-        </div>
-      </div> -->
-    </section>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 <style type="text/css">
 #lab_social_icon_footer a {
@@ -124,33 +139,31 @@
 
 
 
-  .bg-dark{
-    background-color: transparent !important;
-  }
-  body{
+.bg-dark{
+	background-color: transparent !important;
+}
+body{
     font-family: 'Lato' !important, sans-serif;
-  }
-  nav ul li a{
+}
+nav ul li a{
     color: black !important;
     padding-left: 15px !important;
     padding-right: 15px !important;
 
     
-  }
-  nav ul li a:hover{
+}
+nav ul li a:hover{
     background-color: black;
     color: white !important;
-    
-  }
-  nav ul li {
+}
+nav ul li {
     background-color: white;
+}
 
-  }
-
-  .navbar-brand{
+.navbar-brand{
     color: black !important;
     font-size: 2em;
-  }
+}
 
 .custom-toggler.navbar-toggler {
     border-color: #1C1B1B;
@@ -158,6 +171,54 @@
 }
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(28,27,27,0.9)' stroke-width='4' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
+
+
+.contact{
+	padding-top: 50px;			
+}
+textarea{
+	height: 100% !important;
+}
+.form-control{
+	background-color: white;
+	border: none ;
+	border-bottom: 2px solid #1C1B1B;
+	border-radius: 0px;
+	box-shadow: 0px;
+	font-size: 1em;
+	height: 50px;
+	color: white;
+}
+.form-control:focus {
+	border-color: #1C1B1B;
+	box-shadow: none;
+	/*box-shadow: inset 0 1px 1px #EDC36D, 0 0 8px #EDC36D;*/
+}
+.white{
+	background-color: white !important;
+	color: #1C1B1B;
+	border-color: #1C1B1B;
+}
+.white:hover{
+	background-color: #EDC36D !important;
+	color: #1C1B1B;
+	border-color: #1C1B1B;
+}
+textarea.form-control{
+	height: 50px;
+}
+.btn{
+	background-color: white;
+	border-color: #1C1B1B;
+	font-size: 1.5em;
+	color: black;
+}
+.btn:hover{
+	background-color: #1C1B1B;
+	border-color: #1C1B1B;
 }
 </style>
   </body>
